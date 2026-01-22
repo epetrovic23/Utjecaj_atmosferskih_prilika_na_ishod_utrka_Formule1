@@ -1,12 +1,27 @@
-# Utjecaj atmosferskih prilika na ishod utrka Formule1
+# Analiza utjecaja vremenskih uvjeta na ishod utrka Formule 1 🏎️🌦️
+
+Ovaj projekt analizira povezanost između temperature staze i uspjeha vozača u F1 sezoni 2023. koristeći Python, OpenF1 API i povijesne podatke.
 
 Formula 1 je jedan od tehnološki najnaprednijih sportova na svijetu, gdje o pobjedi često odlučuju milisekunde. Osim inženjerskih performansi bolida i vještine vozača, jedan od ključnih vanjskih faktora koji utječe na ishod utrke su vremenski uvjeti. **Temperatura staze** (*track temperature*) izravno diktira **prianjanje guma** (*grip*) i njihovu degradaciju, dok **temperatura zraka** utječe na hlađenje motora i aerodinamičku efikasnost.
 
+## Opis projekta
+Cilj projekta je integrirati statičke podatke (CSV) s dinamičkim telemetrijskim podacima (REST API) kako bi se utvrdilo utječu li ekstremni vremenski uvjeti na poredak vozača.
 
-Motivacija za ovaj projekt je istražiti postoji li korelacija između temperature staze i konačnog plasmana vozača u sezoni 2023.
+**Korištene tehnologije:**
+* Python (Pandas, Requests, SQLAlchemy, Flask)
+* Jupyter Notebook
+* SQLite baza podataka
+* OpenF1 API
 
-Cilj projekta je razviti automatizirani sustav koji integrira:
-* **Statičke povijesne podatke (CSV):** Podaci o utrkama i rezultatima (preuzeti s [Kaggle repozitorija](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)).
-* **Dinamičke telemetrijske podatke (REST API):** Meteorološki podaci dohvaćeni putem OpenF1 API-ja.
+## Kako pokrenuti projekt
 
-Sustav pohranjuje ove podatke u strukturiranu bazu za daljnju analizu i ekspoziciju putem vlastitog REST API-ja, te vizualno prikazuje kako se performanse najboljih vozača mijenjaju u ovisnosti o ekstremnim uvjetima 
+### Opcija 1: Google Colab
+1. Preuzmite datoteku `epetrovic23_F1_Project.ipynb`.
+2. Otvorite je u [Google Colab](https://colab.research.google.com/).
+3. Uploadajte CSV datoteke (`races.csv`, `drivers.csv`, `results.csv`) u Colab (lijeva strana, ikona mape).
+4. Pokrenite ćelije redom ("Run All").
+
+### Opcija 2: Lokalno na računalu
+1. Klonirajte repozitorij:
+   ```bash
+   git clone [https://github.com/epetrovic23/f1-weather-analysis.git](https://github.com/epetrovic23/f1-weather-analysis.git)
