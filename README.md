@@ -24,4 +24,4 @@ Cilj projekta je integrirati statičke podatke (CSV) s dinamičkim telemetrijski
 ### Opcija 2: Lokalno na računalu
 1. Klonirajte repozitorij:
    ```bash
-   git clone [https://github.com/epetrovic23/f1-weather-analysis.git](https://github.com/epetrovic23/f1-weather-analysis.git)
+   git clone [https://github.com/epetrovic23/Utjecaj_atmosferskih_prilika_na_ishod_utrka_Formule1.git](https://github.com/epetrovic23/Utjecaj_atmosferskih_prilika_na_ishod_utrka_Formule1.git)
